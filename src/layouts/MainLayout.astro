@@ -1,0 +1,86 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'Plus Jakarta Sans', sans-serif;
+			}
+			h1, h2, h3, .font-serif {
+				font-family: 'Playfair Display', serif;
+			}
+		</style>
+	</head>
+	<body class="min-h-screen bg-stone-50 text-stone-900 antialiased selection:bg-amber-100 selection:text-amber-950">
+		<nav class="border-b border-stone-200/80 py-4 px-6 flex justify-between items-center sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-xs">
+			<div class="flex items-center gap-3">
+				<img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/7338573210795556865~c5_100x100.jpeg" alt="Sam Thalasso Logo" class="w-12 h-12 rounded-full border-2 border-amber-500 shadow-sm">
+				<div class="text-2xl font-serif tracking-wide text-stone-950 font-bold">
+					SAM <span class="text-amber-700 font-sans text-[10px] uppercase tracking-widest block font-semibold">Thalasso Lounge</span>
+				</div>
+			</div>
+			<div class="hidden md:flex gap-8 text-sm font-medium text-stone-700">
+				<a href="#about" class="hover:text-amber-700 transition-colors">About Us</a>
+				<a href="#services" class="hover:text-amber-700 transition-colors">Services</a>
+				<a href="#contact" class="hover:text-amber-700 transition-colors">Contact</a>
+			</div>
+			<a href="#contact" class="bg-stone-900 text-stone-50 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black transition-all shadow-sm tracking-wide">
+				Book Session
+			</a>
+		</nav>
+
+		<main>
+			<slot />
+		</main>
+
+		<footer class="bg-stone-900 text-stone-300 py-16 px-6 border-t border-stone-800">
+			<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+				<div class="col-span-1 md:col-span-2">
+					<div class="flex items-center gap-3 mb-4">
+						<img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/7338573210795556865~c5_100x100.jpeg" alt="Logo" class="w-10 h-10 rounded-full border-2 border-amber-500">
+						<div class="text-2xl font-serif tracking-wide text-stone-100 font-bold">
+							SAM <span class="text-amber-500 font-sans text-[10px] uppercase tracking-widest block font-semibold">Thalasso Lounge</span>
+						</div>
+					</div>
+					<p class="text-stone-400 max-w-sm text-sm leading-relaxed">
+						Rejuvenate your body and mind with our exclusive therapeutic massage, marine treatments, and premium wellness relaxation.
+					</p>
+				</div>
+				<div>
+					<h4 class="text-stone-100 font-medium mb-4 text-xs tracking-wider uppercase">Quick Links</h4>
+					<ul class="space-y-2 text-sm text-stone-400">
+						<li><a href="#about" class="hover:text-amber-400 transition-colors">About Us</a></li>
+						<li><a href="#services" class="hover:text-amber-400 transition-colors">Services</a></li>
+						<li><a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="text-stone-100 font-medium mb-4 text-xs tracking-wider uppercase">Socials</h4>
+					<ul class="space-y-2 text-sm text-stone-400">
+						<li><a href="https://www.tiktok.com/@sam_thalasso_lounge" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-2">TikTok Profile &rarr;</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="max-w-6xl mx-auto mt-16 pt-8 border-t border-stone-800 text-xs text-stone-500">
+				&copy; {new Date().getFullYear()} SAM Thalasso Lounge. All rights reserved.
+			</div>
+		</footer>
+	</body>
+</html>
