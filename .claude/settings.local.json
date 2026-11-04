@@ -15,7 +15,13 @@
       "Bash(git push *)",
       "Bash(git pull *)",
       "Bash(git rm *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(ls C:/Users/ReGnover/Downloads/*png* 2>/dev/null || echo \"no png\")",
+      "Bash(python3 -c \"from PIL import Image; im=Image.open\\('meme.png'\\); print\\(im.size, im.mode\\)\")",
+      "Bash(python -m http.server 8001)",
+      "Bash(cp \"C:\\\\Users\\\\ReGnover\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-ReGnover-Contacts\\\\8f71c25c-48af-4d0d-bc86-5ea0b912aa63\\\\images\\\\7.jpg\" public/logo.jpg)",
+      "Bash(curl -s http://localhost:8001/ping-services.png -I)",
+      "Bash(git branch *)"
     ]
   }
 }
