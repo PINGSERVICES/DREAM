@@ -24,7 +24,12 @@
       "Bash(git branch *)",
       "Bash(awk ' *)",
       "Bash(curl -s -L -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://www.tiktok.com/@sam_thalasso_lounge\")",
-      "Bash(curl -s -L -A \"Mozilla/5.0\" \"https://www.tiktok.com/@sam_thalasso_lounge\")"
+      "Bash(curl -s -L -A \"Mozilla/5.0\" \"https://www.tiktok.com/@sam_thalasso_lounge\")",
+      "Bash(sed -i '175s/$/,/' src/pages/index.astro)",
+      "Bash(sed -i '176s/$/,/' src/pages/index.astro)",
+      "Bash(sed -i '177s/$/,/' src/pages/index.astro)",
+      "Bash(sed -i '178s/$/,/' src/pages/index.astro)",
+      "Bash(sed -i '179s/$/,/' src/pages/index.astro)"
     ]
   }
 }

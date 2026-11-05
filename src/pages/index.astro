@@ -39,7 +39,19 @@ import MainLayout from '../layouts/MainLayout.astro';
 				contactTitle: "Don't Miss Our Launch",
 				contactDesc: "Be the first to know when we open our doors in March 2027. Connect with us on TikTok for behind-the-scenes progress.",
 				emailUs: "Email for Inquiries",
-				visitTikTok: "Follow Our Progress →"
+				visitTikTok: "Follow Our Progress →",
+				founderTag: "From the Founder",
+				founderTitle: "A Vision of Beauty & Serenity",
+				founderDesc: "Welcome to Sam Thalasso Lounge. As the owner, I envisioned a sanctuary where the healing power of the sea meets the artistry of professional beauty care. Every treatment is designed to restore your balance, awaken your senses, and guide you toward a deeper state of relaxation and harmony.",
+				founderRole: "Founder & Wellness Director",
+				addressLabel: "Address",
+				addressText: "Sidi Rayes, in front of Abidi Pattiserie",
+				phoneLabel: "Phone",
+				phoneText: "+213 555 123 456",
+				visitUs: "Visit Us",
+				meetFounder: "Meet Our Founder",
+				followTikTok: "Follow on TikTok →",
+				skinCare: "Specialist in skin care treatments, facial therapies, and modern fashion wellness. With years of experience in cosmetic and wellness coaching, Sam is dedicated to helping you discover your natural beauty and inner balance."
 			},
 			fr: {
 				navAbout: "À propos",
@@ -75,7 +87,19 @@ import MainLayout from '../layouts/MainLayout.astro';
 				contactTitle: "Ne Manquez Pas Notre Lancement",
 				contactDesc: "Soyez le premier informé de notre ouverture en mars 2027. Suivez-nous sur TikTok pour voir l'avancement.",
 				emailUs: "Email pour Informations",
-				visitTikTok: "Suivre Notre Progrès →"
+				visitTikTok: "Suivre Notre Progrès →",
+				founderTag: "Du Fondateur",
+				founderTitle: "Une Vision de Beauté & Sérénité",
+				founderDesc: "Bienvenue au Sam Thalasso Lounge. En tant que fondateur, j'ai imaginé un sanctuaire où le pouvoir guérisseur de la mer rencontre l'art des soins de beauté professionnels. Chaque traitement est conçu pour rétablir votre équilibre, éveiller vos sens et vous guider vers un état de relaxation et d'harmonie plus profond.",
+				founderRole: "Fondateur & Directeur de Bien-être",
+				addressLabel: "Adresse",
+				addressText: "Sidi Rayes, devant Abidi Pattiserie",
+				phoneLabel: "Téléphone",
+				phoneText: "+213 555 123 456",
+				visitUs: "Nous Visiter",
+				meetFounder: "Rencontrer le Fondateur",
+				followTikTok: "Suivre sur TikTok →",
+				skinCare: "Spécialiste en soins de peau, traitements faciaux et bien-être mode moderne. Avec des années d'expérience en cosmétique et coaching bien-être, Sam est dédié à vous aider à découvrir votre beauté naturelle et votre équilibre intérieur."
 			},
 			de: {
 				navAbout: "Über uns",
@@ -147,7 +171,18 @@ import MainLayout from '../layouts/MainLayout.astro';
 				contactTitle: "لا تفوت انطلاقتنا",
 				contactDesc: "كن أول من يعلم عند افتتاح أبوابنا في مارس 2027. تابعونا على تيك توك لمشاهدة تقدم العمل.",
 				emailUs: "البريد للاستفسارات",
-				visitTikTok: "تابع تقدمنا ←"
+				visitTikTok: "تابع تقدمنا ←",
+				founderTag: "من المؤسس",
+				founderTitle: "رأي في الجمال والهدوء",
+				founderDesc: "مرحباً بك في سام ثالاسو. بصفتي المؤسس، تمنيتك أن ي become ملاذ حيث قوة البحر العلاجية تلتقي بفنون العناية بالجمال المحترفة. كل علاج مصمم ليعيد توازنك، يفيق ح sensesك، ويرشدك إلى حالة من الاسترخاء والانسجام العميق.",
+				founderRole: "المؤسس ومدير العافية",
+				addressLabel: "العنوان",
+				addressText: "سيدي ريس، أمام مخابز عبيدة",
+				phoneLabel: "رقم الهاتف",
+				phoneText: "+213 555 123 456",
+				visitUs: "زرورتنا",
+				meetFounder: "المؤسس",
+				skinCare: "متخصص في علاجات الجلد، العلاجات الوجهية، وتقنيات الموضة الحديثة. بسنوات من experiance في التجميل والارشادة العافية، سام مكرس لمساعدتك في اكتشاف جملكNatural واتزانك الداخلي."
 			}
 		};
 
@@ -203,16 +238,16 @@ import MainLayout from '../layouts/MainLayout.astro';
 <!-- Owner Introduction Section -->
 		<section class="py-20 bg-stone-50 border-y border-stone-200 px-6">
 			<div class="max-w-3xl mx-auto text-center">
-				<span class="text-amber-600 text-xs font-bold uppercase tracking-widest block mb-4">From the Founder</span>
-				<h2 class="text-4xl font-serif mb-8 text-stone-900">A Vision of Beauty & Serenity</h2>
-				<p class="text-stone-600 text-lg leading-relaxed mb-8">
+				<span data-i18n="founderTag" class="text-amber-600 text-xs font-bold uppercase tracking-widest block mb-4">From the Founder</span>
+				<h2 data-i18n="founderTitle" class="text-4xl font-serif mb-8 text-stone-900">A Vision of Beauty & Serenity</h2>
+				<p data-i18n="founderDesc" class="text-stone-600 text-lg leading-relaxed mb-8">
 					Welcome to Sam Thalasso Lounge. As the owner, I envisioned a sanctuary where the healing power of the sea meets the artistry of professional beauty care. Every treatment is designed to restore your balance, awaken your senses, and guide you toward a deeper state of relaxation and harmony.
 				</p>
 				<div class="flex items-center justify-center gap-4">
 					<img src="/sam-thalasso-lounge/logo.jpg" alt="Sam Thalasso" class="w-16 h-16 rounded-full border-4 border-amber-500 shadow-lg">
 					<div class="text-left">
 						<div class="font-serif text-xl font-bold text-stone-900">Sam Thalasso</div>
-						<div class="text-sm text-amber-600 font-medium">Founder & Wellness Director</div>
+						<div data-i18n="founderRole" class="text-sm text-amber-600 font-medium">Founder & Wellness Director</div>
 					</div>
 				</div>
 			</div>
@@ -275,35 +310,35 @@ import MainLayout from '../layouts/MainLayout.astro';
 		<section id="contact-info" class="py-24 px-6 max-w-6xl mx-auto">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 				<div class="bg-white p-10 rounded-[2.5rem] border border-stone-200 shadow-sm">
-					<h3 class="text-2xl font-serif mb-6 text-stone-900">Visit Us</h3>
+					<h3 data-i18n="visitUs" class="text-2xl font-serif mb-6 text-stone-900">Visit Us</h3>
 					<div class="space-y-4 text-stone-700">
 						<div class="flex items-start gap-3">
 							<svg class="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.815 17.5a4 4 0 01-2.343-.657l-2.7-2.7a4 4 0 01-.657-2.343l.5-3.843a4 4 0 117.93-1.04l.5 3.843"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 11.5l2.5 2.5"/></svg>
 							<div>
-								<div class="font-semibold text-stone-900">Address</div>
-								<div class="text-sm">Sidi Rayes, in front of Abidi Pattiserie</div>
+								<div data-i18n="addressLabel" class="font-semibold text-stone-900">Address</div>
+								<div data-i18n="addressText" class="text-sm">Sidi Rayes, in front of Abidi Pattiserie</div>
 							</div>
 						</div>
 						<div class="flex items-start gap-3">
 							<svg class="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.5 4.5a1 1 0 01-.5 1.2l-2.2 1.5a11 11 0 005 5l1.5-2.2a1 1 0 011.2-.5l4.5 1.5A1 1 0 0118 15.5V19a2 2 0 01-2 2h-1C9.5 21 3 14.5 3 6.5V5z"/></svg>
 							<div>
-								<div class="font-semibold text-stone-900">Phone</div>
-								<div class="text-sm">+213 555 123 456</div>
+								<div data-i18n="phoneLabel" class="font-semibold text-stone-900">Phone</div>
+								<div data-i18n="phoneText" class="text-sm">+213 555 123 456</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="bg-white p-10 rounded-[2.5rem] border border-stone-200 shadow-sm">
-					<h3 class="text-2xl font-serif mb-6 text-stone-900">Meet Our Founder</h3>
+					<h3 data-i18n="meetFounder" class="text-2xl font-serif mb-6 text-stone-900">Meet Our Founder</h3>
 					<div class="flex items-center gap-4 mb-6">
 						<img src="/sam-thalasso-lounge/logo.jpg" alt="Sam Thalasso" class="w-20 h-20 rounded-full border-4 border-amber-500 shadow-lg">
 						<div>
 							<div class="font-serif text-xl font-bold text-stone-900">Sam Thalasso</div>
-							<div class="text-sm text-amber-600 font-medium">Founder & Wellness Coach</div>
+							<div data-i18n="founderRole" class="text-sm text-amber-600 font-medium">Founder & Wellness Coach</div>
 						</div>
 					</div>
-					<p class="text-stone-600 leading-relaxed mb-4 text-sm">Specialist in skin care treatments, facial therapies, and modern fashion wellness. With years of experience in cosmetic and wellness coaching, Sam is dedicated to helping you discover your natural beauty and inner balance.</p>
-					<a href="https://www.tiktok.com/@sam_thalasso_lounge" target="_blank" class="inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-black transition-all">Follow on TikTok →</a>
+					<p data-i18n="skinCare" class="text-stone-600 leading-relaxed mb-4 text-sm">Specialist in skin care treatments, facial therapies, and modern fashion wellness. With years of experience in cosmetic and wellness coaching, Sam is dedicated to helping you discover your natural beauty and inner balance.</p>
+					<a href="https://www.tiktok.com/@sam_thalasso_lounge" target="_blank" data-i18n="followTikTok" class="inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-black transition-all">Follow on TikTok →</a>
 				</div>
 			</div>
 		</section>
