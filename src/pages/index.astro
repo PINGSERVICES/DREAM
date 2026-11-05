@@ -271,31 +271,42 @@ import MainLayout from '../layouts/MainLayout.astro';
 		</div>
 	</section>
 
-	<!-- Gallery Section -->
-	<section class="py-24 bg-stone-950 text-white px-6">
-		<div class="max-w-6xl mx-auto">
-			<div class="text-center mb-20">
-				<span class="text-amber-400 text-xs font-bold uppercase tracking-widest block mb-4">Gallery</span>
-				<h2 data-i18n="galleryTitle" class="text-4xl md:text-5xl font-serif mb-6">Experience Sam Thalasso</h2>
-				<p data-i18n="galleryDesc" class="text-stone-400 max-w-xl mx-auto text-lg">Watch our journey and get a glimpse of the tranquility coming in March 2027.</p>
+<!-- Contact & Location Section -->
+		<section id="contact-info" class="py-24 px-6 max-w-6xl mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+				<div class="bg-white p-10 rounded-[2.5rem] border border-stone-200 shadow-sm">
+					<h3 class="text-2xl font-serif mb-6 text-stone-900">Visit Us</h3>
+					<div class="space-y-4 text-stone-700">
+						<div class="flex items-start gap-3">
+							<svg class="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.815 17.5a4 4 0 01-2.343-.657l-2.7-2.7a4 4 0 01-.657-2.343l.5-3.843a4 4 0 117.93-1.04l.5 3.843"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 11.5l2.5 2.5"/></svg>
+							<div>
+								<div class="font-semibold text-stone-900">Address</div>
+								<div class="text-sm">Sidi Rayes, in front of Abidi Pattiserie</div>
+							</div>
+						</div>
+						<div class="flex items-start gap-3">
+							<svg class="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.5 4.5a1 1 0 01-.5 1.2l-2.2 1.5a11 11 0 005 5l1.5-2.2a1 1 0 011.2-.5l4.5 1.5A1 1 0 0118 15.5V19a2 2 0 01-2 2h-1C9.5 21 3 14.5 3 6.5V5z"/></svg>
+							<div>
+								<div class="font-semibold text-stone-900">Phone</div>
+								<div class="text-sm">+213 555 123 456</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white p-10 rounded-[2.5rem] border border-stone-200 shadow-sm">
+					<h3 class="text-2xl font-serif mb-6 text-stone-900">Meet Our Founder</h3>
+					<div class="flex items-center gap-4 mb-6">
+						<img src="/sam-thalasso-lounge/logo.jpg" alt="Sam Thalasso" class="w-20 h-20 rounded-full border-4 border-amber-500 shadow-lg">
+						<div>
+							<div class="font-serif text-xl font-bold text-stone-900">Sam Thalasso</div>
+							<div class="text-sm text-amber-600 font-medium">Founder & Wellness Coach</div>
+						</div>
+					</div>
+					<p class="text-stone-600 leading-relaxed mb-4 text-sm">Specialist in skin care treatments, facial therapies, and modern fashion wellness. With years of experience in cosmetic and wellness coaching, Sam is dedicated to helping you discover your natural beauty and inner balance.</p>
+					<a href="https://www.tiktok.com/@sam_thalasso_lounge" target="_blank" class="inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-black transition-all">Follow on TikTok →</a>
+				</div>
 			</div>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-				<div class="group overflow-hidden rounded-[2rem] aspect-[4/5] relative shadow-2xl">
-					<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Spa 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-					<div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent"></div>
-				</div>
-				<div class="group overflow-hidden rounded-[2rem] aspect-[4/5] relative shadow-2xl md:mt-12">
-					<img src="https://images.unsplash.com/photo-1512290900672-ed2f5344d5c4?auto=format&fit=crop&w=800&q=80" alt="Beauty 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-					<div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent"></div>
-				</div>
-				<div class="group overflow-hidden rounded-[2rem] aspect-[4/5] relative shadow-2xl">
-					<img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Massage 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-					<div class="absolute inset-0 bg-gradient-to-t from-stone-900/60 to-transparent"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
+		</section>
 	<!-- Contact Section -->
 	<section id="contact" class="py-24 px-6 max-w-4xl mx-auto">
 		<div class="bg-stone-900 rounded-[3rem] p-16 text-center text-white shadow-2xl border border-stone-800 relative overflow-hidden">

@@ -22,7 +22,9 @@
       "Bash(cp \"C:\\\\Users\\\\ReGnover\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-ReGnover-Contacts\\\\8f71c25c-48af-4d0d-bc86-5ea0b912aa63\\\\images\\\\7.jpg\" public/logo.jpg)",
       "Bash(curl -s http://localhost:8001/ping-services.png -I)",
       "Bash(git branch *)",
-      "Bash(awk ' *)"
+      "Bash(awk ' *)",
+      "Bash(curl -s -L -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" \"https://www.tiktok.com/@sam_thalasso_lounge\")",
+      "Bash(curl -s -L -A \"Mozilla/5.0\" \"https://www.tiktok.com/@sam_thalasso_lounge\")"
     ]
   }
 }
