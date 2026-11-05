@@ -21,7 +21,8 @@
       "Bash(python -m http.server 8001)",
       "Bash(cp \"C:\\\\Users\\\\ReGnover\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-ReGnover-Contacts\\\\8f71c25c-48af-4d0d-bc86-5ea0b912aa63\\\\images\\\\7.jpg\" public/logo.jpg)",
       "Bash(curl -s http://localhost:8001/ping-services.png -I)",
-      "Bash(git branch *)"
+      "Bash(git branch *)",
+      "Bash(awk ' *)"
     ]
   }
 }
