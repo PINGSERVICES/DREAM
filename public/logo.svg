@@ -1,6 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <circle cx="100" cy="100" r="92" fill="#ffffff" stroke="#D4AF37" stroke-width="6"/>
-  <circle cx="100" cy="100" r="76" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.6"/>
-  <text x="100" y="118" font-family="Georgia, serif" font-size="54" font-weight="bold" fill="#1a1a1a" text-anchor="middle">SAM</text>
-  <text x="100" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#B8860B" text-anchor="middle" letter-spacing="2">THALASSO LOUNGE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Dream Sté logo">
+  <defs>
+    <linearGradient id="book" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f0e1"/>
+      <stop offset="1" stop-color="#d8cdb4"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c9a227"/>
+      <stop offset="0.5" stop-color="#f0d76a"/>
+      <stop offset="1" stop-color="#9c7a16"/>
+    </linearGradient>
+  </defs>
+
+  <!-- open book -->
+  <path d="M30 60 L100 38 L170 60 L170 140 Q100 162 30 140 Z" fill="url(#book)" stroke="#8a7a4a" stroke-width="2"/>
+  <path d="M100 38 L100 140" stroke="#8a7a4a" stroke-width="1.5"/>
+  <path d="M55 80 Q75 74 95 82" fill="none" stroke="#6b5d3a" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M55 96 Q75 90 95 98" fill="none" stroke="#6b5d3a" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M105 82 Q125 74 145 80" fill="none" stroke="#6b5d3a" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M105 98 Q125 90 145 96" fill="none" stroke="#6b5d3a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- quill -->
+  <path d="M138 120 L150 108 L142 116 L150 124 Z" fill="url(#gold)" stroke="#7a5e14" stroke-width="1"/>
+  <path d="M150 108 L160 98" stroke="#7a5e14" stroke-width="2" stroke-linecap="round"/>
+  <path d="M158 94 L162 90 L166 92 Z" fill="#c9a227"/>
+
+  <!-- DREAM text -->
+  <text x="100" y="172" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="34" font-weight="900" letter-spacing="3"
+        fill="#1a1410" stroke="#8a7a4a" stroke-width="0.4">DREAM</text>
+  <text x="100" y="190" text-anchor="middle"
+        font-family="Georgia, serif"
+        font-size="9" font-weight="600" letter-spacing="5"
+        fill="#8a7a4a">STÉ</text>
 </svg>

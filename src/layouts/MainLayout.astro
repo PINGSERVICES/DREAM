@@ -3,84 +3,139 @@ import '../styles/global.css';
 
 interface Props {
 	title: string;
+	description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description = "Sté Dream - Librairie, Scolaires, Bureautiques et Cadeaux à Medjez el Bab." } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="fr" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/stedream-library/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="description" content={description} />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		<style>
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<style is:global>
+			:root {
+				--brand-primary: #c9a227;
+				--brand-secondary: #8a7a4a;
+				--brand-dark: #1a1410;
+			}
+
 			body {
 				font-family: 'Plus Jakarta Sans', sans-serif;
 			}
-			h1, h2, h3, .font-serif {
-				font-family: 'Playfair Display', serif;
+
+			[lang="ar"] body {
+				font-family: 'Cairo', sans-serif;
+			}
+
+			h1, h2, h3, .font-brand {
+				font-family: 'Plus Jakarta Sans', sans-serif;
+				font-weight: 800;
+			}
+
+			[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] .font-brand {
+				font-family: 'Cairo', sans-serif;
+				font-weight: 800;
 			}
 		</style>
 	</head>
-	<body class="min-h-screen bg-stone-50 text-stone-900 antialiased selection:bg-amber-100 selection:text-amber-950">
-		<nav class="border-b border-stone-200/80 py-4 px-6 flex justify-between items-center sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-xs">
+	<body class="min-h-screen bg-white text-stone-900 antialiased selection:bg-amber-100 selection:text-amber-950">
+		<nav class="border-b border-stone-100 py-3 px-6 flex justify-between items-center sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
 			<div class="flex items-center gap-3">
-				<img src="/sam-thalasso-lounge/logo.jpg" alt="Sam Thalasso Logo" class="w-12 h-12 rounded-full border-2 border-amber-500 shadow-sm">
-				<div class="text-2xl font-serif tracking-wide text-stone-950 font-bold">
-					SAM <span class="text-amber-700 font-sans text-[10px] uppercase tracking-widest block font-semibold">Thalasso Lounge</span>
+				<img src="/stedream-library/logo.svg" alt="Sté Dream Logo" class="w-10 h-10">
+				<div class="flex flex-col leading-none">
+					<span class="text-xl font-bold tracking-tight text-stone-950">DREAM</span>
+					<span class="text-[10px] uppercase tracking-widest text-amber-700 font-bold">Librairie Sté</span>
 				</div>
 			</div>
-			<div class="hidden md:flex gap-8 text-sm font-medium text-stone-700">
-				<a href="#about" class="hover:text-amber-700 transition-colors">About Us</a>
-				<a href="#services" class="hover:text-amber-700 transition-colors">Services</a>
-				<a href="#contact" class="hover:text-amber-700 transition-colors">Contact</a>
+
+			<div class="flex items-center gap-4">
+				<div class="flex items-center gap-1 bg-stone-50 p-1 rounded-lg border border-stone-200 text-[10px] font-bold">
+					<button onclick="setLanguage('fr')" class="lang-btn px-2 py-1 rounded hover:bg-white hover:shadow-sm transition-all" data-lang="fr">FR</button>
+					<button onclick="setLanguage('ar')" class="lang-btn px-2 py-1 rounded hover:bg-white hover:shadow-sm transition-all" data-lang="ar">العربية</button>
+				</div>
+				<a href="#contact" data-i18n="navContact" class="hidden sm:block bg-stone-950 text-white px-4 py-2 rounded-full text-xs font-bold hover:bg-black transition-all">
+					Contact
+				</a>
 			</div>
-			<a href="#contact" class="bg-stone-900 text-stone-50 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-black transition-all shadow-sm tracking-wide">
-				Book Session
-			</a>
 		</nav>
 
 		<main>
 			<slot />
 		</main>
 
-		<footer class="bg-stone-900 text-stone-300 py-16 px-6 border-t border-stone-800">
-			<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-				<div class="col-span-1 md:col-span-2">
+		<footer class="bg-stone-950 text-stone-400 py-12 px-6">
+			<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+				<div>
 					<div class="flex items-center gap-3 mb-4">
-						<img src="/sam-thalasso-lounge/logo.jpg" alt="Logo" class="w-10 h-10 rounded-full border-2 border-amber-500">
-						<div class="text-2xl font-serif tracking-wide text-stone-100 font-bold">
-							SAM <span class="text-amber-500 font-sans text-[10px] uppercase tracking-widest block font-semibold">Thalasso Lounge</span>
-						</div>
+						<img src="/stedream-library/logo.svg" alt="Logo" class="w-8 h-8 brightness-0 invert opacity-80">
+						<span class="text-white font-bold tracking-tight">DREAM STÉ</span>
 					</div>
-					<p class="text-stone-400 max-w-sm text-sm leading-relaxed">
-						Rejuvenate your body and mind with our exclusive therapeutic massage, marine treatments, and premium wellness relaxation.
+					<p data-i18n="footerDesc" class="text-sm leading-relaxed max-w-xs">
+						Votre destination pour les fournitures scolaires, la bureautique et les cadeaux à Medjez el Bab.
 					</p>
 				</div>
 				<div>
-					<h4 class="text-stone-100 font-medium mb-4 text-xs tracking-wider uppercase">Quick Links</h4>
-					<ul class="space-y-2 text-sm text-stone-400">
-						<li><a href="#about" class="hover:text-amber-400 transition-colors">About Us</a></li>
-						<li><a href="#services" class="hover:text-amber-400 transition-colors">Services</a></li>
-						<li><a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a></li>
+					<h4 class="text-white font-bold mb-4 text-xs tracking-wider uppercase">Socials</h4>
+					<ul class="space-y-2 text-sm">
+						<li><a href="https://www.instagram.com/stedream1/" target="_blank" class="hover:text-amber-500 transition-colors flex items-center gap-2">Instagram</a></li>
+						<li><a href="https://www.facebook.com/stedreamlibrary" target="_blank" class="hover:text-amber-500 transition-colors flex items-center gap-2">Facebook</a></li>
+						<li><a href="https://www.tiktok.com/@ste.dream" target="_blank" class="hover:text-amber-500 transition-colors flex items-center gap-2">TikTok</a></li>
+						<li><a href="https://threads.com/@stedream1" target="_blank" class="hover:text-amber-500 transition-colors flex items-center gap-2">Threads</a></li>
 					</ul>
 				</div>
 				<div>
-					<h4 class="text-stone-100 font-medium mb-4 text-xs tracking-wider uppercase">Socials</h4>
-					<ul class="space-y-2 text-sm text-stone-400">
-						<li><a href="https://www.tiktok.com/@sam_thalasso_lounge" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-2">TikTok Profile &rarr;</a></li>
-					</ul>
+					<h4 class="text-white font-bold mb-4 text-xs tracking-wider uppercase">Contact</h4>
+					<p class="text-sm">Medjez el Bab, Tunisie</p>
+					<p class="text-sm font-bold text-amber-500 mt-1">94 134 128</p>
 				</div>
 			</div>
-			<div class="max-w-6xl mx-auto mt-16 pt-8 border-t border-stone-800 text-xs text-stone-500">
-				&copy; {new Date().getFullYear()} SAM Thalasso Lounge. All rights reserved.
+			<div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-stone-900 text-[10px] text-stone-600 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+				<p>&copy; {new Date().getFullYear()} Sté Dream Library. All rights reserved.</p>
+				<p>🤖 Generated with Claude Code</p>
 			</div>
 		</footer>
+
+		<script is:inline>
+			function setLanguage(lang) {
+				localStorage.setItem('library_lang', lang);
+				document.documentElement.setAttribute('lang', lang);
+				document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+				// Update translations
+				const t = window.translations?.[lang];
+				if (t) {
+					document.querySelectorAll('[data-i18n]').forEach(el => {
+						const key = el.getAttribute('data-i18n');
+						if (t[key]) el.textContent = t[key];
+					});
+				}
+
+				// Update active button state
+				document.querySelectorAll('.lang-btn').forEach(btn => {
+					if (btn.getAttribute('data-lang') === lang) {
+						btn.classList.add('bg-white', 'shadow-sm', 'text-amber-700');
+					} else {
+						btn.classList.remove('bg-white', 'shadow-sm', 'text-amber-700');
+					}
+				});
+			}
+
+			// Initialize language on load
+			window.addEventListener('DOMContentLoaded', () => {
+				const savedLang = localStorage.getItem('library_lang') || 'fr';
+				setLanguage(savedLang);
+			});
+		</script>
 	</body>
 </html>

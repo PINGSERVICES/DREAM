@@ -2,362 +2,255 @@
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<MainLayout title="Sam Thalasso Lounge | Grand Opening March 2027">
+<MainLayout title="Sté Dream | Librairie, Scolaires, Bureautiques & Cadeaux">
 	<script is:inline>
-		const translations = {
-			en: {
-				navAbout: "About Us",
-				navServices: "Services",
-				navContact: "Contact",
-				bookSession: "Notify Me",
-				badge: "Coming Soon • March 2027",
-				heroTitle: "Luxury Wellness & Spa is arriving.",
-				heroDesc: "Prepare for a new standard of rejuvenation. Sam Thalasso Lounge brings professional massage therapy and seawater healing to life in March 2027.",
-				openingBanner: "Grand Opening: March 2027",
-				bookEscape: "Get Notified",
-				exploreServices: "Explore Services",
-				aboutTag: "Our Philosophy",
-				aboutTitle: "A Sanctuary of Gold & White",
-				aboutDesc: "We are meticulously crafting a space where the therapeutic power of the sea meets unparalleled luxury. Opening its doors in Spring 2027.",
-				feat1: "✓ Professional therapeutic massage",
-				feat2: "✓ Marine hydrotherapy excellence",
-				feat3: "✓ Exclusive beauty treatments",
-				servicesTag: "Coming Soon",
-				servicesTitle: "Premier Spa Experiences",
-				servicesDesc: "Our upcoming menu features world-class treatments designed for total restoration.",
-				serv1Title: "Signature Gold Massage",
-				serv1Desc: "A premium massage experience focusing on deep muscle relief and relaxation in a serene environment.",
-				serv2Title: "Thalasso Hydrotherapy",
-				serv2Desc: "Harnessing mineral-rich seawater to revitalize your body and spirit.",
-				serv3Title: "Aromatherapy Rituals",
-				serv3Desc: "Exquisite essential oils and techniques to melt away the stresses of modern life.",
-				serv4Title: "Advanced Beauty Care",
-				serv4Desc: "Specialized marine-based facials and body treatments for a radiant glow.",
-				galleryTitle: "Experience Sam Thalasso",
-				galleryDesc: "Watch our journey and get a glimpse of the tranquility coming in March 2027.",
-				contactTag: "Stay Updated",
-				contactTitle: "Don't Miss Our Launch",
-				contactDesc: "Be the first to know when we open our doors in March 2027. Connect with us on TikTok for behind-the-scenes progress.",
-				emailUs: "Email for Inquiries",
-				visitTikTok: "Follow Our Progress →",
-				founderTag: "From the Founder",
-				founderTitle: "A Vision of Beauty & Serenity",
-				founderDesc: "Welcome to Sam Thalasso Lounge. As the owner, I envisioned a sanctuary where the healing power of the sea meets the artistry of professional beauty care. Every treatment is designed to restore your balance, awaken your senses, and guide you toward a deeper state of relaxation and harmony.",
-				founderRole: "Founder & Wellness Director",
-				addressLabel: "Address",
-				addressText: "Sidi Rayes, in front of Abidi Pattiserie",
-				phoneLabel: "Phone",
-				phoneText: "+213 555 123 456",
-				visitUs: "Visit Us",
-				meetFounder: "Meet Our Founder",
-				followTikTok: "Follow on TikTok →",
-				skinCare: "Specialist in skin care treatments, facial therapies, and modern fashion wellness. With years of experience in cosmetic and wellness coaching, Sam is dedicated to helping you discover your natural beauty and inner balance."
-			},
+		window.translations = {
 			fr: {
-				navAbout: "À propos",
-				navServices: "Services",
 				navContact: "Contact",
-				bookSession: "M'avertir",
-				badge: "Ouverture Prochaine • Mars 2027",
-				heroTitle: "L'Excellence du Bien-être & Spa arrive.",
-				heroDesc: "Préparez-vous à un nouveau standard de ressourcement. Sam Thalasso Lounge dévoile ses soins d'exception en mars 2027.",
-				openingBanner: "Grande Ouverture : Mars 2027",
-				bookEscape: "S'inscrire",
-				exploreServices: "Découvrir les Services",
-				aboutTag: "Notre Philosophie",
-				aboutTitle: "Un Sanctuaire d'Or et de Blanc",
-				aboutDesc: "Nous créons méticuleusement un espace où la force de la mer rencontre un luxe inégalé. Ouverture au printemps 2027.",
-				feat1: "✓ Massages thérapeutiques professionnels",
-				feat2: "✓ Excellence de l'hydrothérapie marine",
-				feat3: "✓ Soins de beauté exclusifs",
-				servicesTag: "Bientôt Disponible",
-				servicesTitle: "Expériences Spa de Premier Ordre",
-				servicesDesc: "Notre futur menu propose des soins de classe mondiale conçus pour une restauration totale.",
-				serv1Title: "Massage Signature Or",
-				serv1Desc: "Une expérience de massage haut de gamme axée sur le soulagement musculaire profond.",
-				serv2Title: "Hydrothérapie Thalasso",
-				serv2Desc: "Utiliser l'eau de mer riche en minéraux pour revitaliser votre corps et votre esprit.",
-				serv3Title: "Rituels d'Aromathérapie",
-				serv3Desc: "Des huiles essentielles exquises pour dissiper le stress de la vie moderne.",
-				serv4Title: "Soins de Beauté Avancés",
-				serv4Desc: "Soins du visage et du corps à base de produits marins pour un éclat radieux.",
-				galleryTitle: "Découvrez Sam Thalasso",
-				galleryDesc: "Suivez notre parcours et un aperçu de la sérénité qui arrive en mars 2027.",
-				contactTag: "Restez Informé",
-				contactTitle: "Ne Manquez Pas Notre Lancement",
-				contactDesc: "Soyez le premier informé de notre ouverture en mars 2027. Suivez-nous sur TikTok pour voir l'avancement.",
-				emailUs: "Email pour Informations",
-				visitTikTok: "Suivre Notre Progrès →",
-				founderTag: "Du Fondateur",
-				founderTitle: "Une Vision de Beauté & Sérénité",
-				founderDesc: "Bienvenue au Sam Thalasso Lounge. En tant que fondateur, j'ai imaginé un sanctuaire où le pouvoir guérisseur de la mer rencontre l'art des soins de beauté professionnels. Chaque traitement est conçu pour rétablir votre équilibre, éveiller vos sens et vous guider vers un état de relaxation et d'harmonie plus profond.",
-				founderRole: "Fondateur & Directeur de Bien-être",
+				heroBadge: "Medjez el Bab • Scolaires & Bureautique",
+				heroTitle: "Librairie & Fournitures Sté Dream",
+				heroDesc: "Votre référence incontournable à Medjez el Bab pour les fournitures scolaires, la papeterie bureautique, l'informatique, les jouets et les cadeaux.",
+				visitStore: "Nous Contacter",
+				exploreProducts: "Nos Produits",
+				aboutTag: "À Propos de Nous",
+				aboutTitle: "Votre librairie de proximité de confiance",
+				aboutDesc: "Sté Dream vous accompagne au quotidien avec une large sélection de produits scolaires, articles de bureau, équipements informatiques, ainsi qu'un grand choix de jouets et d'idées cadeaux pour toute la famille.",
+				servicesTag: "Nos Spécialités",
+				servicesTitle: "Ce Que Nous Proposons",
+				servicesDesc: "Découvrez notre gamme complète d'articles soigneusement sélectionnés pour vos besoins.",
+				serv1Title: "Fournitures Scolaires",
+				serv1Desc: "Cahiers, cartables, stylos, trousses et tout le matériel nécessaire pour réussir l'année scolaire.",
+				serv2Title: "Bureautique & Papeterie",
+				serv2Desc: "Tout pour le bureau : papier, classement, imprimantes et accessoires professionnels.",
+				serv3Title: "Informatique",
+				serv3Desc: "Accessoires informatiques, supports de stockage et périphériques essentiels.",
+				serv4Title: "Jouets & Cadeaux",
+				serv4Desc: "Une magnifique collection de jouets et d'idées cadeaux pour toutes les occasions.",
+				locationTag: "Visitez Notre Boutique",
+				locationTitle: "Où Nous Trouver",
 				addressLabel: "Adresse",
-				addressText: "Sidi Rayes, devant Abidi Pattiserie",
+				addressVal: "Medjez el Bab, Tunisie",
 				phoneLabel: "Téléphone",
-				phoneText: "+213 555 123 456",
-				visitUs: "Nous Visiter",
-				meetFounder: "Rencontrer le Fondateur",
-				followTikTok: "Suivre sur TikTok →",
-				skinCare: "Spécialiste en soins de peau, traitements faciaux et bien-être mode moderne. Avec des années d'expérience en cosmétique et coaching bien-être, Sam est dédié à vous aider à découvrir votre beauté naturelle et votre équilibre intérieur."
-			},
-			de: {
-				navAbout: "Über uns",
-				navServices: "Leistungen",
-				navContact: "Kontakt",
-				bookSession: "Info Erhalten",
-				badge: "Demnächst • März 2027",
-				heroTitle: "Luxus-Wellness & Spa im Anmarsch.",
-				heroDesc: "Bereiten Sie sich auf einen neuen Standard der Erholung vor. Die Sam Thalasso Lounge eröffnet im März 2027.",
-				openingBanner: "Große Eröffnung: März 2027",
-				bookEscape: "Benachrichtigen",
-				exploreServices: "Leistungen ansehen",
-				aboutTag: "Unsere Philosophie",
-				aboutTitle: "Ein Refugium in Gold & Weiß",
-				aboutDesc: "Wir gestalten einen Ort, an dem die Heilkraft des Meeres auf unvergleichlichen Luxus trifft. Eröffnung im Frühjahr 2027.",
-				feat1: "✓ Professionelle therapeutische Massagen",
-				feat2: "✓ Exzellente Meeres-Hydrotherapie",
-				feat3: "✓ Exklusive Schönheitsbehandlungen",
-				servicesTag: "Demnächst",
-				servicesTitle: "Erstklassige Spa-Erlebnisse",
-				servicesDesc: "Unser kommendes Menü bietet Behandlungen auf Weltklasse-Niveau.",
-				serv1Title: "Signature Gold Massage",
-				serv1Desc: "Ein erstklassiges Massageerlebnis zur tiefen Muskelentspannung.",
-				serv2Title: "Thalasso Hydrotherapie",
-				serv2Desc: "Mineralstoffreiches Meerwasser zur Vitalisierung von Körper und Geist.",
-				serv3Title: "Aromatherapie-Rituale",
-				serv3Desc: "Erlesene ätherische Öle, um den Alltagsstress hinter sich zu lassen.",
-				serv4Title: "Fortschrittliche Schönheitspflege",
-				serv4Desc: "Spezielle Meeres-Gesichtsbehandlungen für eine strahlende Haut.",
-				galleryTitle: "Sam Thalasso Erleben",
-				galleryDesc: "Verfolgen Sie unsere Reise und erhalten Sie einen Einblick in die Ruhe, die Sie im März 2027 erwartet.",
-				contactTag: "Bleiben Sie auf dem Laufenden",
-				contactTitle: "Verpassen Sie Nicht Unseren Start",
-				contactDesc: "Erfahren Sie als Erster von unserer Eröffnung im März 2027. Folgen Sie uns auf TikTok.",
-				emailUs: "E-Mail für Anfragen",
-				visitTikTok: "Fortschritt Verfolgen →"
+				phoneVal: "94 134 128",
+				hoursLabel: "Disponibilité",
+				hoursVal: "Ouvert du Lundi au Samedi",
+				socialTag: "Réseaux Sociaux",
+				socialTitle: "Suivez Sté Dream en Ligne",
+				socialDesc: "Restez connectés avec nous sur nos réseaux sociaux pour découvrir nos nouveautés, arrivages et offres spéciales.",
+				igTitle: "Instagram",
+				igDesc: "Découvrez nos derniers posts et reels en images.",
+				fbTitle: "Facebook",
+				fbDesc: "Rejoignez notre communauté sur notre page officielle.",
+				tkTitle: "TikTok",
+				tkDesc: "Regardez nos vidéos en boutique et nouveautés.",
+				threadsTitle: "Threads",
+				threadsDesc: "Suivez nos fils d'actualité et discussions.",
+				gameTag: "Espace Ludique",
+				gameTitle: "Mini-Jeu en Ligne",
+				gameDesc: "Un espace de divertissement interactif optimisé pour les navigateurs mobiles. Bientôt disponible avec de nouveaux mini-jeux amusants !",
+				gamePlaceholder: "Le mini-jeu sera intégré ici selon vos spécifications.",
+				footerDesc: "Votre destination pour les fournitures scolaires, la bureautique et les cadeaux à Medjez el Bab."
 			},
 			ar: {
-				navAbout: "من نحن",
-				navServices: "الخدمات",
 				navContact: "اتصل بنا",
-				bookSession: "أعلمني",
-				badge: "قريباً • مارس 2027",
-				heroTitle: "فخامة العافية والسبا في طريقها إليكم.",
-				heroDesc: "استعد لمعايير جديدة من تجديد النشاط. يفتح صالون سام ثالاسو أبوابه في مارس 2027 ليقدم أرقى علاجات المساج والشفاء البحري.",
-				openingBanner: "الافتتاح الكبير: مارس 2027",
-				bookEscape: "اشترك للإشعارات",
-				exploreServices: "استكشف الخدمات",
-				aboutTag: "فلسفتنا",
-				aboutTitle: "ملاذ من الذهب والأبيض",
-				aboutDesc: "نحن نصمم بدقة مساحة تلتقي فيها قوة البحر العلاجية مع فخامة لا تضاهى. الافتتاح في ربيع 2027.",
-				feat1: "✓ مساج علاجي احترافي",
-				feat2: "✓ تميز في العلاج المائي البحري",
-				feat3: "✓ علاجات تجميل حصرية",
-				servicesTag: "قريباً",
-				servicesTitle: "تجارب سبا فاخرة",
-				servicesDesc: "تتميز قائمتنا القادمة بعلاجات عالمية المستوى مصممة للاستعادة الكاملة.",
-				serv1Title: "مساج الذهب المميز",
-				serv1Desc: "تجربة مساج فاخرة تركز على راحة العضلات العميقة والاسترخاء.",
-				serv2Title: "العلاج المائي ثالاسو",
-				serv2Desc: "استغلال مياه البحر الغنية بالمعادن لتنشيط جسمك وروحك.",
-				serv3Title: "طقوس الروائح العطرية",
-				serv3Desc: "زيوت عطرية رائعة للتخلص من ضغوط الحياة الحديثة.",
-				serv4Title: "عناية متقدمة بالجمال",
-				serv4Desc: "جلسات تجميل بحرية متخصصة للحصول على بشرة متوهجة.",
-				galleryTitle: "اكتشف عالم سام ثالاسو",
-				galleryDesc: "شاهد رحلتنا واحصل على لمحة عن الهدوء القادم في مارس 2027.",
-				contactTag: "ابقَ على اطلاع",
-				contactTitle: "لا تفوت انطلاقتنا",
-				contactDesc: "كن أول من يعلم عند افتتاح أبوابنا في مارس 2027. تابعونا على تيك توك لمشاهدة تقدم العمل.",
-				emailUs: "البريد للاستفسارات",
-				visitTikTok: "تابع تقدمنا ←",
-				founderTag: "من المؤسس",
-				founderTitle: "رأي في الجمال والهدوء",
-				founderDesc: "مرحباً بك في سام ثالاسو. بصفتي المؤسس، تمنيتك أن ي become ملاذ حيث قوة البحر العلاجية تلتقي بفنون العناية بالجمال المحترفة. كل علاج مصمم ليعيد توازنك، يفيق ح sensesك، ويرشدك إلى حالة من الاسترخاء والانسجام العميق.",
-				founderRole: "المؤسس ومدير العافية",
+				heroBadge: "مجاز الباب • أدوات مدرسية ومكتبية",
+				heroTitle: "مكتبة وخدمات دريم ستيه",
+				heroDesc: "وجهتكم الأولى في مجاز الباب لجميع المستلزمات المدرسية، اللوازم المكتبية، الإعلامية، الألعاب والهدايا.",
+				visitStore: "تواصل معنا",
+				exploreProducts: "منتجاتنا",
+				aboutTag: "من نحن",
+				aboutTitle: "مكتبتك المحلية الموثوقة",
+				aboutDesc: "تقدم لكم 'دريم ستيه' تشكيلة واسعة من الأدوات المدرسية، اللوازم المكتبية، التجهيزات الإعلامية، بالإضافة إلى تشكيلة مميزة من الألعاب والهدايا لجميع المناسبات.",
+				servicesTag: "تخصصاتنا",
+				servicesTitle: "ما نقدمله لكم",
+				servicesDesc: "اكتشف مجموعتنا الشاملة من المنتجات المختارة بعناية لتلبية كافة احتياجاتكم.",
+				serv1Title: "المستلزمات المدرسية",
+				serv1Desc: "كراسات، محافظ، أقلام، مقلمات وكل ما يلزم لنجاح السنة الدراسية.",
+				serv2Title: "اللوازم المكتبية",
+				serv2Desc: "كل ما تحتاجه للمكتب: ورق، ملفات، طابعات وإكسسوارات مهنية.",
+				serv3Title: "الإعلامية",
+				serv3Desc: "إكسسوارات حواسيب، وسائط تخزين وملحقات أساسية.",
+				serv4Title: "الألعاب والهدايا",
+				serv4Desc: "مجموعة رائعة من الألعاب وأفكار الهدايا لكل المناسبات.",
+				locationTag: "زوروا محلنا",
+				locationTitle: "أين تجدوننا",
 				addressLabel: "العنوان",
-				addressText: "سيدي ريس، أمام مخابز عبيدة",
-				phoneLabel: "رقم الهاتف",
-				phoneText: "+213 555 123 456",
-				visitUs: "زرورتنا",
-				meetFounder: "المؤسس",
-				skinCare: "متخصص في علاجات الجلد، العلاجات الوجهية، وتقنيات الموضة الحديثة. بسنوات من experiance في التجميل والارشادة العافية، سام مكرس لمساعدتك في اكتشاف جملكNatural واتزانك الداخلي."
+				addressVal: "مجاز الباب، تونس",
+				phoneLabel: "الهاتف",
+				phoneVal: "94 134 128",
+				hoursLabel: "أوقات العمل",
+				hoursVal: "مفتوح من الإثنين إلى السبت",
+				socialTag: "شبكات التواصل الاجتماعي",
+				socialTitle: "تابعوا دريم ستيه على الإنترنت",
+				socialDesc: "ابقوا على تواصل معنا عبر صفحاتنا الرسمية للاطلاع على آخر المستجدات والوصول الجديدة.",
+				igTitle: "إنستغرام",
+				igDesc: "تابعوا أحدث المنشورات والفيديوهات القصيرة.",
+				fbTitle: "فيسبوك",
+				fbDesc: "انضموا إلى مجتمعنا على صفحتنا الرسمية.",
+				tkTitle: "تيك توك",
+				tkDesc: "شاهدوا فيديوهاتنا من داخل المحل وآخر المنتجات.",
+				threadsTitle: "ثريدز",
+				threadsDesc: "تابعوا آخر المستجدات والتحديثات.",
+				gameTag: "ركن الترفيه",
+				gameTitle: "لعبة مصغرة للمتصفح",
+				gameDesc: "منطقة ترفيه تفاعلية مصممة خصيصاً لتناسب متصفحات الهواتف المحمولة. ستتوفر قريباً بألعاب ممتعة!",
+				gamePlaceholder: "سيتم دمج اللعبة المصغرة هنا قريباً وفقاً لتوجيهاتكم.",
+				footerDesc: "وجهتكم المفضلة للمستلزمات المدرسية، المكتبية والهدايا في مجاز الباب."
 			}
 		};
-
-		function setLanguage(lang) {
-			localStorage.setItem('preferred_lang', lang);
-			const t = translations[lang];
-			if (!t) return;
-			if (lang === 'ar') { document.documentElement.setAttribute('dir', 'rtl'); document.documentElement.setAttribute('lang', 'ar'); } else { document.documentElement.setAttribute('dir', 'ltr'); document.documentElement.setAttribute('lang', lang); }
-			document.querySelectorAll('[data-i18n]').forEach(el => { const key = el.getAttribute('data-i18n'); if (t[key]) el.textContent = t[key]; });
-		}
-		window.addEventListener('DOMContentLoaded', () => setLanguage(localStorage.getItem('preferred_lang') || 'en'));
 	</script>
 
-	<!-- Grand Opening Announcement Bar -->
-	<div class="bg-amber-600 text-white py-3 px-6 text-center font-bold tracking-wide shadow-md relative z-50">
-		<span class="animate-pulse" data-i18n="openingBanner">Grand Opening: March 2027</span>
-	</div>
-
-	<div class="bg-stone-950 text-stone-300 py-2 px-6 text-xs flex justify-between items-center border-b border-stone-800">
-		<div class="flex items-center gap-2"><span>✨ Sam Thalasso Lounge & Spa</span></div>
-		<div class="flex items-center gap-2 font-medium">
-			<button onclick="setLanguage('en')" class="hover:text-amber-400 transition-colors px-1">EN</button>
-			<span class="text-stone-700">|</span>
-			<button onclick="setLanguage('fr')" class="hover:text-amber-400 transition-colors px-1">FR</button>
-			<span class="text-stone-700">|</span>
-			<button onclick="setLanguage('de')" class="hover:text-amber-400 transition-colors px-1">DE</button>
-			<span class="text-stone-700">|</span>
-			<button onclick="setLanguage('ar')" class="hover:text-amber-400 transition-colors px-1">العربية</button>
-		</div>
-	</div>
-
 	<!-- Hero Section -->
-	<section class="py-24 md:py-32 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
-		<span data-i18n="badge" class="bg-amber-50 text-amber-700 border border-amber-200 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-			Coming Soon • March 2027
+	<section class="py-20 md:py-32 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
+		<span data-i18n="heroBadge" class="bg-amber-50 text-amber-800 border border-amber-200/60 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+			Medjez el Bab • Scolaires & Bureautique
 		</span>
-		<h1 data-i18n="heroTitle" class="text-5xl md:text-8xl font-serif tracking-tight mb-8 max-w-5xl leading-tight text-stone-900">
-			Luxury Wellness & Spa is arriving.
+
+		<!-- Store Sign Photo Preview -->
+		<div class="mb-10 w-full max-w-2xl rounded-2xl overflow-hidden shadow-lg border border-stone-200 bg-stone-100">
+			<img src="/stedream-library/images/sign.png" alt="Sté Dream Store Sign" class="w-full h-auto object-cover max-h-64">
+			<div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 font-medium flex justify-between items-center">
+				<span>Sté Dream • Enseigne Officielle</span>
+				<span class="text-amber-400 font-bold">94 134 128</span>
+			</div>
+		</div>
+
+		<h1 data-i18n="heroTitle" class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 text-stone-950 leading-tight">
+			Librairie & Fournitures Sté Dream
 		</h1>
-		<p data-i18n="heroDesc" class="text-lg md:text-2xl text-stone-600 mb-12 max-w-3xl leading-relaxed">
-			Prepare for a new standard of rejuvenation. Sam Thalasso Lounge brings professional massage therapy and seawater healing to life in March 2027.
+		<p data-i18n="heroDesc" class="text-base sm:text-xl text-stone-600 mb-10 max-w-3xl leading-relaxed">
+			Votre référence incontournable à Medjez el Bab pour les fournitures scolaires, la papeterie bureautique, l'informatique, les jouets et les cadeaux.
 		</p>
 		<div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md">
-			<a href="#contact" data-i18n="bookEscape" class="bg-amber-600 text-white px-10 py-5 rounded-full font-bold hover:bg-amber-700 transition-all shadow-xl shadow-amber-200/50 text-lg">
-				Get Notified
+			<a href="tel:94134128" data-i18n="visitStore" class="bg-stone-950 text-white px-8 py-4 rounded-full font-bold hover:bg-black transition-all shadow-md text-base">
+				Nous Contacter
 			</a>
-			<a href="https://www.tiktok.com/@sam_thalasso_lounge" target="_blank" class="border-2 border-stone-200 bg-white px-10 py-5 rounded-full font-bold hover:bg-stone-50 transition-all text-lg flex items-center justify-center gap-2">
-				TikTok Profile &rarr;
+			<a href="#services" data-i18n="exploreProducts" class="border border-stone-300 bg-white text-stone-800 px-8 py-4 rounded-full font-bold hover:bg-stone-50 transition-all text-base">
+				Nos Produits
 			</a>
 		</div>
 	</section>
-
-<!-- Owner Introduction Section -->
-		<section class="py-20 bg-stone-50 border-y border-stone-200 px-6">
-			<div class="max-w-3xl mx-auto text-center">
-				<span data-i18n="founderTag" class="text-amber-600 text-xs font-bold uppercase tracking-widest block mb-4">From the Founder</span>
-				<h2 data-i18n="founderTitle" class="text-4xl font-serif mb-8 text-stone-900">A Vision of Beauty & Serenity</h2>
-				<p data-i18n="founderDesc" class="text-stone-600 text-lg leading-relaxed mb-8">
-					Welcome to Sam Thalasso Lounge. As the owner, I envisioned a sanctuary where the healing power of the sea meets the artistry of professional beauty care. Every treatment is designed to restore your balance, awaken your senses, and guide you toward a deeper state of relaxation and harmony.
-				</p>
-				<div class="flex items-center justify-center gap-4">
-					<img src="/sam-thalasso-lounge/logo.jpg" alt="Sam Thalasso" class="w-16 h-16 rounded-full border-4 border-amber-500 shadow-lg">
-					<div class="text-left">
-						<div class="font-serif text-xl font-bold text-stone-900">Sam Thalasso</div>
-						<div data-i18n="founderRole" class="text-sm text-amber-600 font-medium">Founder & Wellness Director</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 	<!-- About Section -->
-	<section id="about" class="py-24 bg-stone-50 border-y border-stone-200 px-6">
-		<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-			<div>
-				<span data-i18n="aboutTag" class="text-amber-600 text-xs font-bold uppercase tracking-widest block mb-4">Our Philosophy</span>
-				<h2 data-i18n="aboutTitle" class="text-4xl md:text-5xl font-serif mb-8 leading-tight text-stone-900">A Sanctuary of Gold & White</h2>
-				<p data-i18n="aboutDesc" class="text-stone-600 text-lg leading-relaxed mb-8">
-					We are meticulously crafting a space where the therapeutic power of the sea meets unparalleled luxury. Opening its doors in Spring 2027.
-				</p>
-				<ul class="space-y-4 text-stone-700">
-					<li class="flex items-center gap-4"><span class="w-2 h-2 bg-amber-500 rounded-full"></span> <span data-i18n="feat1">Professional therapeutic massage</span></li>
-					<li class="flex items-center gap-4"><span class="w-2 h-2 bg-amber-500 rounded-full"></span> <span data-i18n="feat2">Marine hydrotherapy excellence</span></li>
-					<li class="flex items-center gap-4"><span class="w-2 h-2 bg-amber-500 rounded-full"></span> <span data-i18n="feat3">Exclusive beauty treatments</span></li>
-				</ul>
-			</div>
-			<div class="relative">
-				<div class="absolute -inset-4 border-2 border-amber-200 rounded-3xl -z-10 rotate-3"></div>
-				<img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Spa Massage" class="rounded-3xl object-cover h-[500px] w-full shadow-2xl border-4 border-white">
-			</div>
+	<section id="about" class="py-20 bg-stone-50 border-y border-stone-100 px-6">
+		<div class="max-w-4xl mx-auto text-center">
+			<span data-i18n="aboutTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-3">À Propos de Nous</span>
+			<h2 data-i18n="aboutTitle" class="text-3xl sm:text-4xl font-extrabold mb-6 text-stone-900">Votre librairie de proximité de confiance</h2>
+			<p data-i18n="aboutDesc" class="text-stone-600 text-lg leading-relaxed">
+				Sté Dream vous accompagne au quotidien avec une large sélection de produits scolaires, articles de bureau, équipements informatiques, ainsi qu'un grand choix de jouets et d'idées cadeaux pour toute la famille.
+			</p>
 		</div>
 	</section>
 
-	<!-- Services Section -->
+	<!-- Services & Products Section -->
 	<section id="services" class="py-24 px-6 max-w-6xl mx-auto">
 		<div class="text-center mb-16">
-			<span data-i18n="servicesTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-3">Coming Soon</span>
-			<h2 data-i18n="servicesTitle" class="text-4xl font-serif mb-4 text-stone-900">Premier Spa Experiences</h2>
-			<p data-i18n="servicesDesc" class="text-stone-600 max-w-xl mx-auto">Our upcoming menu features world-class treatments designed for total restoration.</p>
+			<span data-i18n="servicesTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-3">Nos Spécialités</span>
+			<h2 data-i18n="servicesTitle" class="text-3xl sm:text-5xl font-extrabold mb-4 text-stone-900">Ce Que Nous Proposons</h2>
+			<p data-i18n="servicesDesc" class="text-stone-600 max-w-xl mx-auto">Découvrez notre gamme complète d'articles soigneusement sélectionnés pour vos besoins.</p>
 		</div>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-			<div class="bg-white p-10 rounded-[2.5rem] border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-				<div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-3xl flex items-center justify-center text-3xl mb-8">💆‍♀️</div>
-				<h3 data-i18n="serv1Title" class="text-xl font-serif mb-4 text-stone-900">Signature Gold Massage</h3>
-				<p data-i18n="serv1Desc" class="text-stone-500 leading-relaxed text-sm">A premium massage experience focusing on deep muscle relief and relaxation.</p>
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+			<div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">📚</div>
+				<h3 data-i18n="serv1Title" class="text-xl font-bold mb-3 text-stone-900">Fournitures Scolaires</h3>
+				<p data-i18n="serv1Desc" class="text-stone-500 text-sm leading-relaxed">Cahiers, cartables, stylos, trousses et tout le matériel nécessaire pour réussir l'année scolaire.</p>
 			</div>
-			<div class="bg-white p-10 rounded-[2.5rem] border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-				<div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-3xl flex items-center justify-center text-3xl mb-8">🌊</div>
-				<h3 data-i18n="serv2Title" class="text-xl font-serif mb-4 text-stone-900">Thalasso Hydrotherapy</h3>
-				<p data-i18n="serv2Desc" class="text-stone-500 leading-relaxed text-sm">Harnessing mineral-rich seawater to revitalize your body and spirit.</p>
+			<div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">📝</div>
+				<h3 data-i18n="serv2Title" class="text-xl font-bold mb-3 text-stone-900">Bureautique & Papeterie</h3>
+				<p data-i18n="serv2Desc" class="text-stone-500 text-sm leading-relaxed">Tout pour le bureau : papier, classement, imprimantes et accessoires professionnels.</p>
 			</div>
-			<div class="bg-white p-10 rounded-[2.5rem] border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-				<div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-3xl flex items-center justify-center text-3xl mb-8">✨</div>
-				<h3 data-i18n="serv3Title" class="text-xl font-serif mb-4 text-stone-900">Aromatherapy Rituals</h3>
-				<p data-i18n="serv3Desc" class="text-stone-500 leading-relaxed text-sm">Exquisite essential oils to melt away the stresses of modern life.</p>
+			<div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">💻</div>
+				<h3 data-i18n="serv3Title" class="text-xl font-bold mb-3 text-stone-900">Informatique</h3>
+				<p data-i18n="serv3Desc" class="text-stone-500 text-sm leading-relaxed">Accessoires informatiques, supports de stockage et périphériques essentiels.</p>
 			</div>
-			<div class="bg-white p-10 rounded-[2.5rem] border border-stone-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-				<div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-3xl flex items-center justify-center text-3xl mb-8">💄</div>
-				<h3 data-i18n="serv4Title" class="text-xl font-serif mb-4 text-stone-900">Advanced Beauty Care</h3>
-				<p data-i18n="serv4Desc" class="text-stone-500 leading-relaxed text-sm">Specialized marine-based facials and body treatments for a radiant glow.</p>
+			<div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">🎁</div>
+				<h3 data-i18n="serv4Title" class="text-xl font-bold mb-3 text-stone-900">Jouets & Cadeaux</h3>
+				<p data-i18n="serv4Desc" class="text-stone-500 text-sm leading-relaxed">Une magnifique collection de jouets et d'idées cadeaux pour toutes les occasions.</p>
 			</div>
 		</div>
 	</section>
 
-<!-- Contact & Location Section -->
-		<section id="contact-info" class="py-24 px-6 max-w-6xl mx-auto">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-				<div class="bg-white p-10 rounded-[2.5rem] border border-stone-200 shadow-sm">
-					<h3 data-i18n="visitUs" class="text-2xl font-serif mb-6 text-stone-900">Visit Us</h3>
-					<div class="space-y-4 text-stone-700">
-						<div class="flex items-start gap-3">
-							<svg class="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.815 17.5a4 4 0 01-2.343-.657l-2.7-2.7a4 4 0 01-.657-2.343l.5-3.843a4 4 0 117.93-1.04l.5 3.843"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 11.5l2.5 2.5"/></svg>
-							<div>
-								<div data-i18n="addressLabel" class="font-semibold text-stone-900">Address</div>
-								<div data-i18n="addressText" class="text-sm">Sidi Rayes, in front of Abidi Pattiserie</div>
-							</div>
-						</div>
-						<div class="flex items-start gap-3">
-							<svg class="w-6 h-6 text-amber-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.5 4.5a1 1 0 01-.5 1.2l-2.2 1.5a11 11 0 005 5l1.5-2.2a1 1 0 011.2-.5l4.5 1.5A1 1 0 0118 15.5V19a2 2 0 01-2 2h-1C9.5 21 3 14.5 3 6.5V5z"/></svg>
-							<div>
-								<div data-i18n="phoneLabel" class="font-semibold text-stone-900">Phone</div>
-								<div data-i18n="phoneText" class="text-sm">+213 555 123 456</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="bg-white p-10 rounded-[2.5rem] border border-stone-200 shadow-sm">
-					<h3 data-i18n="meetFounder" class="text-2xl font-serif mb-6 text-stone-900">Meet Our Founder</h3>
-					<div class="flex items-center gap-4 mb-6">
-						<img src="/sam-thalasso-lounge/logo.jpg" alt="Sam Thalasso" class="w-20 h-20 rounded-full border-4 border-amber-500 shadow-lg">
+	<!-- Location & Contact Info Section -->
+	<section id="contact" class="py-20 bg-stone-50 border-y border-stone-100 px-6">
+		<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+			<div class="bg-white p-8 sm:p-10 rounded-3xl border border-stone-200/80 shadow-xs">
+				<span data-i18n="locationTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-2">Localisation</span>
+				<h3 data-i18n="locationTitle" class="text-2xl font-bold mb-6 text-stone-900">Où Nous Trouver</h3>
+				<div class="space-y-4 text-stone-700">
+					<div class="flex items-start gap-4">
+						<span class="text-2xl mt-0.5">📍</span>
 						<div>
-							<div class="font-serif text-xl font-bold text-stone-900">Sam Thalasso</div>
-							<div data-i18n="founderRole" class="text-sm text-amber-600 font-medium">Founder & Wellness Coach</div>
+							<div data-i18n="addressLabel" class="font-bold text-stone-900 text-sm">Adresse</div>
+							<div data-i18n="addressVal" class="text-sm text-stone-600">Medjez el Bab, Tunisie</div>
 						</div>
 					</div>
-					<p data-i18n="skinCare" class="text-stone-600 leading-relaxed mb-4 text-sm">Specialist in skin care treatments, facial therapies, and modern fashion wellness. With years of experience in cosmetic and wellness coaching, Sam is dedicated to helping you discover your natural beauty and inner balance.</p>
-					<a href="https://www.tiktok.com/@sam_thalasso_lounge" target="_blank" data-i18n="followTikTok" class="inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-black transition-all">Follow on TikTok →</a>
+					<div class="flex items-start gap-4">
+						<span class="text-2xl mt-0.5">📞</span>
+						<div>
+							<div data-i18n="phoneLabel" class="font-bold text-stone-900 text-sm">Téléphone</div>
+							<a href="tel:94134128" data-i18n="phoneVal" class="text-sm text-amber-700 font-bold hover:underline">94 134 128</a>
+						</div>
+					</div>
+					<div class="flex items-start gap-4">
+						<span class="text-2xl mt-0.5">🕒</span>
+						<div>
+							<div data-i18n="hoursLabel" class="font-bold text-stone-900 text-sm">Disponibilité</div>
+							<div data-i18n="hoursVal" class="text-sm text-stone-600">Ouvert du Lundi au Samedi</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</section>
-	<!-- Contact Section -->
-	<section id="contact" class="py-24 px-6 max-w-4xl mx-auto">
-		<div class="bg-stone-900 rounded-[3rem] p-16 text-center text-white shadow-2xl border border-stone-800 relative overflow-hidden">
-			<div class="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-bl-full opacity-50"></div>
-			<span data-i18n="contactTag" class="text-amber-400 text-xs font-bold uppercase tracking-widest block mb-4">Stay Updated</span>
-			<h2 data-i18n="contactTitle" class="text-4xl md:text-5xl font-serif mb-6">Don't Miss Our Launch</h2>
-			<p data-i18n="contactDesc" class="text-stone-300 mb-12 max-w-xl mx-auto text-lg leading-relaxed">
-				Be the first to know when we open our doors in March 2027. Connect with us on TikTok for behind-the-scenes progress.
+
+			<div class="bg-white p-8 sm:p-10 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between">
+				<div>
+					<span data-i18n="socialTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-2">Réseaux Sociaux</span>
+					<h3 data-i18n="socialTitle" class="text-2xl font-bold mb-4 text-stone-900">Suivez Sté Dream en Ligne</h3>
+					<p data-i18n="socialDesc" class="text-stone-600 text-sm mb-6 leading-relaxed">
+						Restez connectés avec nous sur nos réseaux sociaux pour découvrir nos nouveautés, arrivages et offres spéciales.
+					</p>
+				</div>
+				<div class="grid grid-cols-2 gap-3">
+					<a href="https://www.instagram.com/stedream1/" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group">
+						<div class="font-bold text-sm text-stone-900 group-hover:text-amber-700" data-i18n="igTitle">Instagram</div>
+						<div class="text-[11px] text-stone-500 truncate" data-i18n="igDesc">@stedream1</div>
+					</a>
+					<a href="https://www.facebook.com/stedreamlibrary" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group">
+						<div class="font-bold text-sm text-stone-900 group-hover:text-amber-700" data-i18n="fbTitle">Facebook</div>
+						<div class="text-[11px] text-stone-500 truncate" data-i18n="fbDesc">stedreamlibrary</div>
+					</a>
+					<a href="https://www.tiktok.com/@ste.dream" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group">
+						<div class="font-bold text-sm text-stone-900 group-hover:text-amber-700" data-i18n="tkTitle">TikTok</div>
+						<div class="text-[11px] text-stone-500 truncate" data-i18n="tkDesc">@ste.dream</div>
+					</a>
+					<a href="https://threads.com/@stedream1" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group">
+						<div class="font-bold text-sm text-stone-900 group-hover:text-amber-700" data-i18n="threadsTitle">Threads</div>
+						<div class="text-[11px] text-stone-500 truncate" data-i18n="threadsDesc">@stedream1</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Browser Minigame Placeholder Section -->
+	<section class="py-24 px-6 max-w-4xl mx-auto text-center">
+		<div class="bg-stone-900 text-white rounded-3xl p-10 sm:p-14 border border-stone-800 shadow-xl relative overflow-hidden">
+			<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl"></div>
+			<span data-i18n="gameTag" class="text-amber-400 text-xs font-bold uppercase tracking-widest block mb-3">Espace Ludique</span>
+			<h2 data-i18n="gameTitle" class="text-3xl sm:text-4xl font-extrabold mb-4">Mini-Jeu en Ligne</h2>
+			<p data-i18n="gameDesc" class="text-stone-300 text-base mb-8 max-w-lg mx-auto leading-relaxed">
+				Un espace de divertissement interactif optimisé pour les navigateurs mobiles. Bientôt disponible avec de nouveaux mini-jeux amusants !
 			</p>
-			<div class="flex flex-col sm:flex-row gap-6 justify-center">
-				<a href="mailto:contact@samthalassolounge.com" data-i18n="emailUs" class="bg-white text-stone-900 px-10 py-5 rounded-full font-bold hover:bg-stone-100 transition-all shadow-lg">
-					Email for Inquiries
-				</a>
-				<a href="https://www.tiktok.com/@sam_thalasso_lounge" target="_blank" data-i18n="visitTikTok" class="bg-amber-600 text-white px-10 py-5 rounded-full font-bold hover:bg-amber-700 transition-all shadow-lg border border-amber-500/30">
-					Follow Our Progress →
-				</a>
+
+			<!-- Game Placeholder Container (Ready for specs) -->
+			<div id="minigame-container" class="bg-stone-950 border border-stone-800 rounded-2xl p-8 max-w-md mx-auto flex flex-col items-center justify-center min-h-[220px]">
+				<div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4 animate-bounce">🎮</div>
+				<p data-i18n="gamePlaceholder" class="text-stone-400 text-sm font-medium">
+					Le mini-jeu sera intégré ici selon vos spécifications.
+				</p>
+				<span class="mt-4 text-[10px] uppercase tracking-widest text-stone-600 bg-stone-900 px-3 py-1 rounded-full">Mobile Friendly</span>
 			</div>
 		</div>
 	</section>
