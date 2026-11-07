@@ -41,4 +41,4 @@ npm run dev
 npm run build
 ```
 
-Le résultat sera dans le dossier `dist/`. Pour le déploiement sur GitHub Pages, le `base` est configuré sur `/stedream-library`.
+Le résultat sera dans le dossier `dist/`. Pour le déploiement sur GitHub Pages, le `base` est configuré sur `/DREAM`.

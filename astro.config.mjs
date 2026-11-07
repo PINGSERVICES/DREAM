@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://pingservices.github.io',
-  base: '/stedream-library',
+  base: '/DREAM',
   vite: {
     plugins: [tailwindcss()]
   }

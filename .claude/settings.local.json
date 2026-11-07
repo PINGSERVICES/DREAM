@@ -38,7 +38,8 @@
       "Read(//c/Users/ReGnover/AppData/Local/Temp/claude/24e377d310420dda/b1da9737-89b9-49d5-91ae-1de48c6fea4b/images/**)",
       "Bash(mkdir -p public/images && cp \"/c/Users/ReGnover/AppData/Local/Temp/claude/24e377d310420dda/b1da9737-89b9-49d5-91ae-1de48c6fea4b/images/1.png\" public/images/sign.jpg && ls -la public/images/)",
       "Bash(gh repo *)",
-      "Bash(git stash *)"
+      "Bash(git stash *)",
+      "Bash(npm -v)"
     ]
   }
 }
