@@ -101,31 +101,30 @@ import MainLayout from '../layouts/MainLayout.astro';
 	</script>
 
 	<!-- Hero Section -->
-	<section class="py-20 md:py-32 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
-		<span data-i18n="heroBadge" class="bg-amber-50 text-amber-800 border border-amber-200/60 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+	<section class="py-16 md:py-28 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
+		<span data-i18n="heroBadge" class="bg-amber-50 text-amber-800 border border-amber-200/60 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-8 animate-fade-in">
 			Medjez el Bab • Scolaires & Bureautique
 		</span>
 
-		<!-- Store Sign Photo Preview -->
-		<div class="mb-10 w-full max-w-2xl rounded-2xl overflow-hidden shadow-lg border border-stone-200 bg-stone-100">
-			<img src="/DREAM/images/sign.png" alt="Sté Dream Store Sign" class="w-full h-auto object-cover max-h-64">
-			<div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 font-medium flex justify-between items-center">
-				<span>Sté Dream • Enseigne Officielle</span>
-				<span class="text-amber-400 font-bold">94 134 128</span>
+		<!-- Animated Logo -->
+		<div class="mb-10 relative">
+			<div class="absolute -inset-6 bg-gradient-to-br from-amber-400/30 via-amber-200/20 to-transparent rounded-3xl blur-2xl animate-pulse-soft"></div>
+			<div class="relative w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl border border-stone-200 bg-stone-950 animate-float">
+				<img src="/DREAM/images/logo.png" alt="Sté Dream Logo" class="w-full h-auto object-cover">
 			</div>
 		</div>
 
-		<h1 data-i18n="heroTitle" class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 text-stone-950 leading-tight">
+		<h1 data-i18n="heroTitle" class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 text-stone-950 leading-tight animate-fade-in-up">
 			Librairie & Fournitures Sté Dream
 		</h1>
-		<p data-i18n="heroDesc" class="text-base sm:text-xl text-stone-600 mb-10 max-w-3xl leading-relaxed">
+		<p data-i18n="heroDesc" class="text-base sm:text-xl text-stone-600 mb-10 max-w-3xl leading-relaxed animate-fade-in-up" style="animation-delay: 0.2s">
 			Votre référence incontournable à Medjez el Bab pour les fournitures scolaires, la papeterie bureautique, l'informatique, les jouets et les cadeaux.
 		</p>
-		<div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md">
-			<a href="tel:94134128" data-i18n="visitStore" class="bg-stone-950 text-white px-8 py-4 rounded-full font-bold hover:bg-black transition-all shadow-md text-base">
+		<div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md animate-fade-in-up" style="animation-delay: 0.4s">
+			<a href="tel:94134128" data-i18n="visitStore" class="bg-stone-950 text-white px-8 py-4 rounded-full font-bold hover:bg-black hover:scale-105 transition-all shadow-md text-base">
 				Nous Contacter
 			</a>
-			<a href="#services" data-i18n="exploreProducts" class="border border-stone-300 bg-white text-stone-800 px-8 py-4 rounded-full font-bold hover:bg-stone-50 transition-all text-base">
+			<a href="#services" data-i18n="exploreProducts" class="border border-stone-300 bg-white text-stone-800 px-8 py-4 rounded-full font-bold hover:bg-stone-50 hover:scale-105 transition-all text-base">
 				Nos Produits
 			</a>
 		</div>
@@ -134,9 +133,9 @@ import MainLayout from '../layouts/MainLayout.astro';
 	<!-- About Section -->
 	<section id="about" class="py-20 bg-stone-50 border-y border-stone-100 px-6">
 		<div class="max-w-4xl mx-auto text-center">
-			<span data-i18n="aboutTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-3">À Propos de Nous</span>
-			<h2 data-i18n="aboutTitle" class="text-3xl sm:text-4xl font-extrabold mb-6 text-stone-900">Votre librairie de proximité de confiance</h2>
-			<p data-i18n="aboutDesc" class="text-stone-600 text-lg leading-relaxed">
+			<span data-i18n="aboutTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-3 animate-fade-in">À Propos de Nous</span>
+			<h2 data-i18n="aboutTitle" class="text-3xl sm:text-4xl font-extrabold mb-6 text-stone-900 animate-fade-in-up">Votre librairie de proximité de confiance</h2>
+			<p data-i18n="aboutDesc" class="text-stone-600 text-lg leading-relaxed animate-fade-in-up" style="animation-delay: 0.15s">
 				Sté Dream vous accompagne au quotidien avec une large sélection de produits scolaires, articles de bureau, équipements informatiques, ainsi qu'un grand choix de jouets et d'idées cadeaux pour toute la famille.
 			</p>
 		</div>
@@ -145,28 +144,28 @@ import MainLayout from '../layouts/MainLayout.astro';
 	<!-- Services & Products Section -->
 	<section id="services" class="py-24 px-6 max-w-6xl mx-auto">
 		<div class="text-center mb-16">
-			<span data-i18n="servicesTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-3">Nos Spécialités</span>
-			<h2 data-i18n="servicesTitle" class="text-3xl sm:text-5xl font-extrabold mb-4 text-stone-900">Ce Que Nous Proposons</h2>
-			<p data-i18n="servicesDesc" class="text-stone-600 max-w-xl mx-auto">Découvrez notre gamme complète d'articles soigneusement sélectionnés pour vos besoins.</p>
+			<span data-i18n="servicesTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-3 animate-fade-in">Nos Spécialités</span>
+			<h2 data-i18n="servicesTitle" class="text-3xl sm:text-5xl font-extrabold mb-4 text-stone-900 animate-fade-in-up">Ce Que Nous Proposons</h2>
+			<p data-i18n="servicesDesc" class="text-stone-600 max-w-xl mx-auto animate-fade-in-up" style="animation-delay: 0.15s">Découvrez notre gamme complète d'articles soigneusement sélectionnés pour vos besoins.</p>
 		</div>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-			<div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
-				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">📚</div>
+			<div class="group bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:border-amber-300 transition-all duration-300 flex flex-col items-center text-center">
+				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">📚</div>
 				<h3 data-i18n="serv1Title" class="text-xl font-bold mb-3 text-stone-900">Fournitures Scolaires</h3>
 				<p data-i18n="serv1Desc" class="text-stone-500 text-sm leading-relaxed">Cahiers, cartables, stylos, trousses et tout le matériel nécessaire pour réussir l'année scolaire.</p>
 			</div>
-			<div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
-				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">📝</div>
+			<div class="group bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:border-amber-300 transition-all duration-300 flex flex-col items-center text-center">
+				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">📝</div>
 				<h3 data-i18n="serv2Title" class="text-xl font-bold mb-3 text-stone-900">Bureautique & Papeterie</h3>
 				<p data-i18n="serv2Desc" class="text-stone-500 text-sm leading-relaxed">Tout pour le bureau : papier, classement, imprimantes et accessoires professionnels.</p>
 			</div>
-			<div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
-				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">💻</div>
+			<div class="group bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:border-amber-300 transition-all duration-300 flex flex-col items-center text-center">
+				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">💻</div>
 				<h3 data-i18n="serv3Title" class="text-xl font-bold mb-3 text-stone-900">Informatique</h3>
 				<p data-i18n="serv3Desc" class="text-stone-500 text-sm leading-relaxed">Accessoires informatiques, supports de stockage et périphériques essentiels.</p>
 			</div>
-			<div class="bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
-				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">🎁</div>
+			<div class="group bg-white p-8 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:border-amber-300 transition-all duration-300 flex flex-col items-center text-center">
+				<div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">🎁</div>
 				<h3 data-i18n="serv4Title" class="text-xl font-bold mb-3 text-stone-900">Jouets & Cadeaux</h3>
 				<p data-i18n="serv4Desc" class="text-stone-500 text-sm leading-relaxed">Une magnifique collection de jouets et d'idées cadeaux pour toutes les occasions.</p>
 			</div>
@@ -176,26 +175,26 @@ import MainLayout from '../layouts/MainLayout.astro';
 	<!-- Location & Contact Info Section -->
 	<section id="contact" class="py-20 bg-stone-50 border-y border-stone-100 px-6">
 		<div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-			<div class="bg-white p-8 sm:p-10 rounded-3xl border border-stone-200/80 shadow-xs">
+			<div class="group bg-white p-8 sm:p-10 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
 				<span data-i18n="locationTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-2">Localisation</span>
 				<h3 data-i18n="locationTitle" class="text-2xl font-bold mb-6 text-stone-900">Où Nous Trouver</h3>
 				<div class="space-y-4 text-stone-700">
 					<div class="flex items-start gap-4">
-						<span class="text-2xl mt-0.5">📍</span>
+						<span class="text-2xl mt-0.5 animate-bounce-subtle">📍</span>
 						<div>
 							<div data-i18n="addressLabel" class="font-bold text-stone-900 text-sm">Adresse</div>
 							<div data-i18n="addressVal" class="text-sm text-stone-600">Medjez el Bab, Tunisie</div>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
-						<span class="text-2xl mt-0.5">📞</span>
+						<span class="text-2xl mt-0.5 animate-bounce-subtle" style="animation-delay: 0.3s">📞</span>
 						<div>
 							<div data-i18n="phoneLabel" class="font-bold text-stone-900 text-sm">Téléphone</div>
 							<a href="tel:94134128" data-i18n="phoneVal" class="text-sm text-amber-700 font-bold hover:underline">94 134 128</a>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
-						<span class="text-2xl mt-0.5">🕒</span>
+						<span class="text-2xl mt-0.5 animate-bounce-subtle" style="animation-delay: 0.6s">🕒</span>
 						<div>
 							<div data-i18n="hoursLabel" class="font-bold text-stone-900 text-sm">Disponibilité</div>
 							<div data-i18n="hoursVal" class="text-sm text-stone-600">Ouvert du Lundi au Samedi</div>
@@ -204,7 +203,7 @@ import MainLayout from '../layouts/MainLayout.astro';
 				</div>
 			</div>
 
-			<div class="bg-white p-8 sm:p-10 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between">
+			<div class="group bg-white p-8 sm:p-10 rounded-3xl border border-stone-200/80 shadow-xs hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
 				<div>
 					<span data-i18n="socialTag" class="text-amber-700 text-xs font-bold uppercase tracking-widest block mb-2">Réseaux Sociaux</span>
 					<h3 data-i18n="socialTitle" class="text-2xl font-bold mb-4 text-stone-900">Suivez Sté Dream en Ligne</h3>
@@ -213,19 +212,19 @@ import MainLayout from '../layouts/MainLayout.astro';
 					</p>
 				</div>
 				<div class="grid grid-cols-2 gap-3">
-					<a href="https://www.instagram.com/stedream1/" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group">
+					<a href="https://www.instagram.com/stedream1/" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group hover:scale-105 hover:rotate-1">
 						<div class="font-bold text-sm text-stone-900 group-hover:text-amber-700" data-i18n="igTitle">Instagram</div>
 						<div class="text-[11px] text-stone-500 truncate" data-i18n="igDesc">@stedream1</div>
 					</a>
-					<a href="https://www.facebook.com/stedreamlibrary" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group">
+					<a href="https://www.facebook.com/stedreamlibrary" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group hover:scale-105 hover:rotate-1">
 						<div class="font-bold text-sm text-stone-900 group-hover:text-amber-700" data-i18n="fbTitle">Facebook</div>
 						<div class="text-[11px] text-stone-500 truncate" data-i18n="fbDesc">stedreamlibrary</div>
 					</a>
-					<a href="https://www.tiktok.com/@ste.dream" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group">
+					<a href="https://www.tiktok.com/@ste.dream" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group hover:scale-105 hover:rotate-1">
 						<div class="font-bold text-sm text-stone-900 group-hover:text-amber-700" data-i18n="tkTitle">TikTok</div>
 						<div class="text-[11px] text-stone-500 truncate" data-i18n="tkDesc">@ste.dream</div>
 					</a>
-					<a href="https://threads.com/@stedream1" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group">
+					<a href="https://threads.com/@stedream1" target="_blank" class="p-3 bg-stone-50 hover:bg-amber-50 border border-stone-200 rounded-2xl text-center transition-all group hover:scale-105 hover:rotate-1">
 						<div class="font-bold text-sm text-stone-900 group-hover:text-amber-700" data-i18n="threadsTitle">Threads</div>
 						<div class="text-[11px] text-stone-500 truncate" data-i18n="threadsDesc">@stedream1</div>
 					</a>
